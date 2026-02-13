@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>PHOTO BOOK</title>
+  <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
+  <style>
+    html { font-size: 100%; }
+    body { background-color: #f4f9ff; color: #333; font-size: 0.875rem; }
+    img { max-width: 100%; }
+
+    /* サイト全体のコンテンツ幅を設定 */
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    /* 中のコンテンツ部分の最大幅を設定 */
+    .inner { max-width: 600px; margin: auto; }
+
+    .section-title { font-size: 1.125rem; font-weight: bold; margin-bottom: 10px; }
+
+    /* ヘッダー */
+    #header { margin-top: 60px; }
+    #header .site-title { width: 160px; line-height: 1; margin-bottom: 15px; }
+    #header .site-title a { display: block; }
+
+    /* メインビジュアル */
+    #mainvisual { margin-bottom: 60px; }
+
+    /* INDEXセクション */
+    #index { background-color: #fff; padding: 30px 0; margin-bottom: 60px; }
+    #index .index-list { margin-left: 20px; }
+    #index .index-list li { margin-bottom: 20px; }
+    #index .index-list li:last-child { margin-bottom: 0; }
+
+    /* DETAILセクション */
+    #detail { margin-bottom: 100px; }
+    #detail .content { display: flex; align-items: flex-start; }
+    #detail .content .img { width: 270px; margin-right: 60px; }
+    #detail .content .title { font-size: 1.125rem; font-weight: bold; }
+    #detail .content .text p { margin-bottom: 20px; }
+    #detail .content dl { display: flex; flex-wrap: wrap; padding: 16px 0; margin-bottom: 25px; border-top: solid 1px #dedede; border-bottom: solid 1px #dedede; }
+    #detail .content dt { width: 25%; font-weight: bold; }
+    #detail .content dd { width: 75%; margin: 0; }
+    #detail .content .link { color: #333; }
+    #detail .content .link:hover { opacity: 0.8; }
+
+    /* フッター */
+    #footer { font-size: 0.625rem; padding: 15px 0; }
+
+    /* SP用 */
+    @media screen and (max-width: 1024px) {
+      .inner { padding: 0 40px; }
+      #header { padding: 0 10px; }
+      #mainvisual { padding: 0 10px; }
+      #detail .content { flex-direction: column; }
+      #detail .content .img { width: 100%; margin: 0 0 25px 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <h1 class="site-title">
+        <a href="index.html"><img src="https://raw.githubusercontent.com/Hazuki110/Mosya2/main/logo.svg" alt="PHOTO BOOK"></a>
+      </h1>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <img src="https://raw.githubusercontent.com/Hazuki110/Mosya2/main/mainvisual.jpg" alt="メインビジュアルテキスト">
+      </div>
+
+      <section id="index">
+        <div class="inner">
+          <h2 class="section-title">INDEX</h2>
+          <ol class="index-list">
+            <li>タイトリングフォーデューション1</li>
+            <li>フォーデューション2</li>
+            <li>フォーデューション3</li>
+            <li>フォーデューション4</li>
+            <li>フォーデューション5</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="detail">
+        <div class="inner">
+          <h2 class="section-title">DETAIL</h2>
+          <div class="content">
+            <img class="img" src="https://raw.githubusercontent.com/Hazuki110/Mosya2/main/detail.jpg" alt="詳細画像">
+            <div class="text">
+              <p class="title">タイトルテキスト</p>
+              <dl>
+                <dt>著者</dt><dd>タイトルタイトル</dd>
+                <dt>出版社</dt><dd>タイトル</dd>
+                <dt>発行年</dt><dd>タイトルタイトル</dd>
+              </dl>
+              <p>
+                テキストテキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキストテキスト
+              </p>
+              <a class="link" href="#" target="_blank" rel="noopener noreferrer">オンラインストアで見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p class="inner">&copy; 2026 PHOTO BOOK</p>
+    </footer>
+  </div>
+</body>
+</html>
